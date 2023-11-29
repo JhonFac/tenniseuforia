@@ -1,0 +1,19 @@
+# TennisEuforia
+
+## Requisitos
+
+- Python (versión 10.10.7)
+- Django (versión 4.2.7)
+- Otros requisitos...
+
+## Configuración del Entorno de Desarrollo
+
+python -m venv venv
+source venv/bin/activate
+.\venv\Scripts\activate
+
+pip install -r requirements.txt
+
+python manage.py migrate
+
+python manage.py runserver

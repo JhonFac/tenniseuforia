@@ -1,0 +1,37 @@
+# Virtual environment
+venv/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Django settings
+*.log
+*.pot
+*.pyc
+db.sqlite3
+db.sqlite3-journal
+
+# Ignore migrations, as they are usually not needed in version control
+**/migrations/
+
+# Ignore local settings
+tenniseuforia/settings/local.py
+
+# Ignore environment files
+.env
+
+# Ignore any compiled Python bytecode
+*.pyc
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore Visual Studio Code settings
+.vscode/
+
+# Ignore system files that might be created by the operating system
+.DS_Store
+Thumbs.db
