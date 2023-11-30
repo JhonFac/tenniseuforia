@@ -1,0 +1,1 @@
+web: gunicorn tenniseuforia.wsgi --log-file -
