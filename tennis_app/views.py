@@ -7,3 +7,7 @@ def mi_vista(request):
     context = {'STATIC_URL': settings.STATIC_URL}
     return render(request, 'tennis_app/index.html', context)
 
+def foot(request):
+    context = {'STATIC_URL': settings.STATIC_URL}
+    return render(request, 'tennis_app/indexf.html', context)
+

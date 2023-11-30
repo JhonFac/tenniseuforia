@@ -20,5 +20,6 @@ from tennis_app import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.mi_vista, name='nombre_de_la_vista'),
+    path('f/', views.foot, name='foot'),
     path('tenniseuforia/', include('tennis_app.urls')),
 ]

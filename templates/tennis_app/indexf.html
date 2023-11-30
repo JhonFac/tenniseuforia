@@ -1,0 +1,533 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with FoodHut landing page.">
+    <meta name="author" content="Devcrud">
+    <title>FoodHut | Free Bootstrap 4.3.x template</title>
+   
+
+    {% comment %} <link rel="apple-touch-icon" href="{% static "img/apple-icon.png" %}">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static "img/favicon.ico" %}">
+
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/templatemo.css' %}">
+    <link rel="stylesheet" href="{% static 'css/custom.css' %}"> {% endcomment %}
+
+    <!-- Load fonts style after rendering the layout styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="{% static "css/fontawesome.min.css" %}">
+
+
+    <!-- font icons -->
+    <link rel="stylesheet" href="{% static 'vendors/themify-icons/css/themify-icons.css' %}">
+
+    <link rel="stylesheet" href="{% static 'vendors/animate/animate.css' %}">
+
+    <!-- Bootstrap + FoodHut main styles -->
+    <link rel="stylesheet" href="{% static 'css/foodhut.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+    {% comment %} <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+        }
+
+        .float:hover {
+            text-decoration: none;
+            color: #FFF;
+            background-color: #1ab152;
+            animation: shake 1s;
+            animation-iteration-count: infinite;
+        }
+
+        .my-float {
+            margin-top: 16px;
+        }
+
+        @keyframes shake {
+            0%, 100% {
+                transform: translateX(0);
+            }
+            25%, 75% {
+                transform: translateX(-5px);
+            }
+            50% {
+                transform: translateX(5px);
+            }
+        }
+    </style>
+     {% endcomment %}
+
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <a href="https://api.whatsapp.com/send?phone=+573212777381&text=Hola, me gustaria Obtener más información" class="float" target="_blank">
+    <i class="fa fa-whatsapp my-float "></i>
+    </a>
+      
+
+    <!-- Navbar -->
+    <nav class="custom-navbar navbar navbar-expand-lg navbar-dark fixed-top" data-spy="affix" data-offset-top="10">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#gallary">Gallary</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#book-table">Book-Table</a>
+                </li>
+            </ul>
+            <a class="navbar-brand m-auto" href="#">
+                {% comment %} <img src="{% static 'img/logo.svg'%}" class="brand-img" alt=""> {% endcomment %}
+                <img src="{% static 'img/logo.png'%}" class="brand-img" alt="">
+                <span class="brand-txt">Tennis Euforia</span>
+            </a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#blog">Blog<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#testmonial">Reviews</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="components.html" class="btn btn-primary ml-xl-4">Components</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- header -->
+    <header id="home" class="header">
+        <div id="template-mo-zay-hero-carousel" class="carousel slide overlay text-white text-center" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="1"></li>
+                <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="row p-5">
+                            <div class="mx-auto col-md-8 col-lg-6 order-lg-last" style="padding-top: 30px;                       ">
+                                <img class="img-fluid" src="{% static 'img/banner_img_01.jpg' %}" alt="">
+                            </div>
+                            <div class="col-lg-6 mb-0 d-flex align-items-center">
+                                <div class="text-align-left align-self-center"> 
+                                    <h1 class="h1 text-success"><b>Zay</b> eCommerce</h1>
+                                    <h3 class="h2">Tiny and Perfect eCommerce Template</h3>
+                                    <p>
+                                        Zay Shop is an eCommerce HTML5 CSS template with latest version of Bootstrap 5 (beta 1). 
+                                        This template is 100% free provided by <a rel="sponsored" class="text-success" href="https://templatemo.com" target="_blank">TemplateMo</a> website. 
+                                        Image credits go to <a rel="sponsored" class="text-success" href="https://stories.freepik.com/" target="_blank">Freepik Stories</a>,
+                                        <a rel="sponsored" class="text-success" href="https://unsplash.com/" target="_blank">Unsplash</a> and
+                                        <a rel="sponsored" class="text-success" href="https://icons8.com/" target="_blank">Icons 8</a>.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row p-5">
+                            <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+                                <img class="img-fluid" src="{% static "img/banner_img_02.jpg" %} " alt="">
+                            </div>
+                            <div class="col-lg-6 mb-0 d-flex align-items-center">
+                                <div class="text-align-left">
+                                    <h1 class="h1">Proident occaecat</h1>
+                                    <h3 class="h2">Aliquip ex ea commodo consequat</h3>
+                                    <p>
+                                        You are permitted to use this Zay CSS template for your commercial websites. 
+                                        You are <strong>not permitted</strong> to re-distribute the template ZIP file in any kind of template collection websites.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row p-5">
+                            <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+                                <img class="img-fluid" src="{% static "img/banner_img_03.jpg" %}  " alt="">
+                            </div>
+                            <div class="col-lg-6 mb-0 d-flex align-items-center">
+                                <div class="text-align-left">
+                                    <h1 class="h1">Repr in voluptate</h1>
+                                    <h3 class="h2">Ullamco laboris nisi ut </h3>
+                                    <p>
+                                        We bring you 100% free CSS templates for your websites. 
+                                        If you wish to support TemplateMo, please make a small contribution via PayPal or tell your friends about our website. Thank you.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev text-decoration-none w-auto ps-3" href="#template-mo-zay-hero-carousel" role="button" data-bs-slide="prev">
+                <i class="fas fa-chevron-left"></i>
+            </a>
+            <a class="carousel-control-next text-decoration-none w-auto pe-3" href="#template-mo-zay-hero-carousel" role="button" data-bs-slide="next">
+                <i class="fas fa-chevron-right"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Start Categories of The Month -->
+    <section class="container py-5">
+        <div class="row text-center pt-3">
+            <div class="col-lg-6 m-auto">
+                <h1 class="h1">Categories of The Month</h1>
+                <p>
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-4 p-5 mt-3">
+                <a href="#"><img src="{% static 'img/hombre.jpg' %}" class="rounded-circle img-fluid border"></a>
+                <h5 class="text-center mt-3 mb-3">Hombre </h5>
+                <p class="text-center"><a class="btn btn-success">Go Shop</a></p>
+            </div>
+            <div class="col-12 col-md-4 p-5 mt-3">
+                <a href="#"><img src="{% static 'img/dama.jpg' %}" class="rounded-circle img-fluid border"></a>
+                <h2 class="h5 text-center mt-3 mb-3">Mujer </h2>
+                <p class="text-center"><a class="btn btn-success">Go Shop</a></p>
+            </div>
+            <div class="col-12 col-md-4 p-5 mt-3">
+                <a href="#"><img src="{% static 'img/alta_gama.jpg' %}" class="rounded-circle img-fluid border"></a>
+                <h2 class="h5 text-center mt-3 mb-3">Alta gama</h2>
+                <p class="text-center"><a class="btn btn-success">Go Shop</a></p>
+            </div>
+        </div>
+    </section>
+    <!-- End Categories of The Month -->
+
+
+    <!--  gallary Section  -->
+    <div id="gallary" class="text-center bg-dark text-light has-height-md middle-items wow fadeIn">
+        <h2 class="section-title">OUR MENU</h2>
+    </div>
+    <div class="gallary row">
+        <div class="col-sm-6 col-lg-3 gallary-item wow fadeIn">
+            <img src="{% static 'img/gallary-1'%}.jpg" alt="template by DevCRID http://www.devcrud.com/" class="gallary-img">
+            <a href="#" class="gallary-overlay">
+                <i class="gallary-icon ti-plus"></i>
+            </a>
+        </div>
+        <div class="col-sm-6 col-lg-3 gallary-item wow fadeIn">
+            <img src="{% static 'img/gallary-2'%}.jpg" alt="template by DevCRID http://www.devcrud.com/" class="gallary-img">
+            <a href="#" class="gallary-overlay">
+                <i class="gallary-icon ti-plus"></i>
+            </a>
+        </div>
+        <div class="col-sm-6 col-lg-3 gallary-item wow fadeIn">
+            <img src="{% static 'img/gallary-3'%}.jpg" alt="template by DevCRID http://www.devcrud.com/" class="gallary-img">
+            <a href="#" class="gallary-overlay">
+                <i class="gallary-icon ti-plus"></i>
+            </a>
+        </div>
+        <div class="col-sm-6 col-lg-3 gallary-item wow fadeIn">
+            <img src="{% static 'img/gallary-4'%}.jpg" alt="template by DevCRID http://www.devcrud.com/" class="gallary-img">
+            <a href="#" class="gallary-overlay">
+                <i class="gallary-icon ti-plus"></i>
+            </a>
+        </div>
+        <div class="col-sm-6 col-lg-3 gallary-item wow fadeIn">
+            <img src="{% static 'img/gallary-5'%}.jpg" alt="template by DevCRID http://www.devcrud.com/" class="gallary-img">
+            <a href="#" class="gallary-overlay">
+                <i class="gallary-icon ti-plus"></i>
+            </a>
+        </div>
+        <div class="col-sm-6 col-lg-3 gallary-item wow fadeIn">
+            <img src="{% static 'img/gallary-6'%}.jpg" alt="template by DevCRID http://www.devcrud.com/" class="gallary-img">
+            <a href="#" class="gallary-overlay">
+                <i class="gallary-icon ti-plus"></i>
+            </a>
+        </div>
+        <div class="col-sm-6 col-lg-3 gallary-item wow fadeIn">
+            <img src="{% static 'img/gallary-7'%}.jpg" alt="template by DevCRID http://www.devcrud.com/" class="gallary-img">
+            <a href="#" class="gallary-overlay">
+                <i class="gallary-icon ti-plus"></i>
+            </a>
+        </div>
+        <div class="col-sm-6 col-lg-3 gallary-item wow fadeIn">
+            <img src="{% static 'img/gallary-8'%}.jpg" alt="template by DevCRID http://www.devcrud.com/" class="gallary-img">
+            <a href="#" class="gallary-overlay">
+                <i class="gallary-icon ti-plus"></i>
+            </a>
+        </div>
+        <div class="col-sm-6 col-lg-3 gallary-item wow fadeIn">
+            <img src="{% static 'img/gallary-9'%}.jpg" alt="template by DevCRID http://www.devcrud.com/" class="gallary-img">
+            <a href="#" class="gallary-overlay">
+                <i class="gallary-icon ti-plus"></i>
+            </a>
+        </div>
+        <div class="col-sm-6 col-lg-3 gallary-item wow fadeIn">
+            <img src="{% static 'img/gallary-10'%}.jpg" alt="template by DevCRID http://www.devcrud.com/" class="gallary-img">
+            <a href="#" class="gallary-overlay">
+                <i class="gallary-icon ti-plus"></i>
+            </a>
+        </div>
+        <div class="col-sm-6 col-lg-3 gallary-item wow fadeIn">
+            <img src="{% static 'img/gallary-11'%}.jpg" alt="template by DevCRID http://www.devcrud.com/" class="gallary-img">
+            <a href="#" class="gallary-overlay">
+                <i class="gallary-icon ti-plus"></i>
+            </a>
+        </div>
+        <div class="col-sm-6 col-lg-3 gallary-item wow fadeIn">
+            <img src="{% static 'img/gallary-12'%}.jpg" alt="template by DevCRID http://www.devcrud.com/" class="gallary-img">
+            <a href="#" class="gallary-overlay">
+                <i class="gallary-icon ti-plus"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- book a table Section  -->
+    <div class="container-fluid has-bg-overlay text-center text-light has-height-lg middle-items" id="book-table">
+        <div class="">
+            <h2 class="section-title mb-5">BOOK A TABLE</h2>
+            <div class="row mb-5">
+                <div class="col-sm-6 col-md-3 col-xs-12 my-2">
+                    <input type="email" id="booktable" class="form-control form-control-lg custom-form-control" placeholder="EMAIL">
+                </div>
+                <div class="col-sm-6 col-md-3 col-xs-12 my-2">
+                    <input type="number" id="booktable" class="form-control form-control-lg custom-form-control" placeholder="NUMBER OF GUESTS" max="20" min="0">
+                </div>
+                <div class="col-sm-6 col-md-3 col-xs-12 my-2">
+                    <input type="time" id="booktable" class="form-control form-control-lg custom-form-control" placeholder="EMAIL">
+                </div>
+                <div class="col-sm-6 col-md-3 col-xs-12 my-2">
+                    <input type="date" id="booktable" class="form-control form-control-lg custom-form-control" placeholder="12/12/12">
+                </div>
+            </div>
+            <a href="#" class="btn btn-lg btn-primary" id="rounded-btn">FIND TABLE</a>
+        </div>
+    </div>
+
+    <!-- BLOG Section  -->
+    <div id="blog" class="container-fluid bg-dark text-light py-5 text-center wow fadeIn">
+        <h2 class="section-title py-5">EVENTS AT THE FOOD HUT</h2>
+        <div class="row justify-content-center">
+            <div class="col-sm-7 col-md-4 mb-5">
+                <ul class="nav nav-pills nav-justified mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#foods" role="tab" aria-controls="pills-home" aria-selected="true">Foods</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#juices" role="tab" aria-controls="pills-profile" aria-selected="false">Juices</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="foods" role="tabpanel" aria-labelledby="pills-home-tab">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card bg-transparent border my-3 my-md-0">
+                            <img src="{% static 'img/blog-1'%}.jpg" alt="template by DevCRID http://www.devcrud.com/" class="rounded-0 card-img-top mg-responsive">
+                            <div class="card-body">
+                                <h1 class="text-center mb-4"><a href="#" class="badge badge-primary">$5</a></h1>
+                                <h4 class="pt20 pb20">Reiciendis Laborum </h4>
+                                <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa provident illum officiis fugit laudantium voluptatem sit iste delectus qui ex. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card bg-transparent border my-3 my-md-0">
+                            <img src="{% static 'img/blog-2'%}.jpg" alt="template by DevCRID http://www.devcrud.com/" class="rounded-0 card-img-top mg-responsive">
+                            <div class="card-body">
+                                <h1 class="text-center mb-4"><a href="#" class="badge badge-primary">$12</a></h1>
+                                <h4 class="pt20 pb20">Adipisci Totam</h4>
+                                <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa provident illum officiis fugit laudantium voluptatem sit iste delectus qui ex. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card bg-transparent border my-3 my-md-0">
+                            <img src="{% static 'img/blog-3'%}.jpg" alt="template by DevCRID http://www.devcrud.com/" class="rounded-0 card-img-top mg-responsive">
+                            <div class="card-body">
+                                <h1 class="text-center mb-4"><a href="#" class="badge badge-primary">$8</a></h1>
+                                <h4 class="pt20 pb20">Dicta Deserunt</h4>
+                                <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa provident illum officiis fugit laudantium voluptatem sit iste delectus qui ex. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="juices" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <div class="row">
+                    <div class="col-md-4 my-3 my-md-0">
+                        <div class="card bg-transparent border">
+                            <img src="{% static 'img/blog-4'%}.jpg" alt="template by DevCRID http://www.devcrud.com/" class="rounded-0 card-img-top mg-responsive">
+                            <div class="card-body">
+                                <h1 class="text-center mb-4"><a href="#" class="badge badge-primary">$15</a></h1>
+                                <h4 class="pt20 pb20">Consectetur Adipisicing Elit</h4>
+                                <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa provident illum officiis fugit laudantium voluptatem sit iste delectus qui ex. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 my-3 my-md-0">
+                        <div class="card bg-transparent border">
+                            <img src="{% static 'img/blog-5'%}.jpg" alt="template by DevCRID http://www.devcrud.com/" class="rounded-0 card-img-top mg-responsive">
+                            <div class="card-body">
+                                <h1 class="text-center mb-4"><a href="#" class="badge badge-primary">$29</a></h1>
+                                <h4 class="pt20 pb20">Ullam Laboriosam</h4>
+                                <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa provident illum officiis fugit laudantium voluptatem sit iste delectus qui ex. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 my-3 my-md-0">
+                        <div class="card bg-transparent border">
+                            <img src="{% static 'img/blog-6'%}.jpg" alt="template by DevCRID http://www.devcrud.com/" class="rounded-0 card-img-top mg-responsive">
+                            <div class="card-body">
+                                <h1 class="text-center mb-4"><a href="#" class="badge badge-primary">$3</a></h1>
+                                <h4 class="pt20 pb20">Fugit Ipsam</h4>
+                                <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa provident illum officiis fugit laudantium voluptatem sit iste delectus qui ex. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- REVIEWS Section  -->
+    <div id="testmonial" class="container-fluid wow fadeIn bg-dark text-light has-height-lg middle-items">
+        <h2 class="section-title my-5 text-center">REVIEWS</h2>
+        <div class="row mt-3 mb-5">
+            <div class="col-md-4 my-3 my-md-0">
+                <div class="testmonial-card">
+                    <h3 class="testmonial-title">John Doe</h3>
+                    <h6 class="testmonial-subtitle">Web Designer</h6>
+                    <div class="testmonial-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum nobis eligendi, quaerat accusamus ipsum sequi dignissimos consequuntur blanditiis natus. Aperiam!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-3 my-md-0">
+                <div class="testmonial-card">
+                    <h3 class="testmonial-title">Steve Thomas</h3>
+                    <h6 class="testmonial-subtitle">UX/UI Designer</h6>
+                    <div class="testmonial-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum minus obcaecati cum eligendi perferendis magni dolorum ipsum magnam, sunt reiciendis natus. Aperiam!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-3 my-md-0">
+                <div class="testmonial-card">
+                    <h3 class="testmonial-title">Miranda Joy</h3>
+                    <h6 class="testmonial-subtitle">Graphic Designer</h6>
+                    <div class="testmonial-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, nam. Earum nobis eligendi, dignissimos consequuntur blanditiis natus. Aperiam!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTACT Section  -->
+    <div id="contact" class="container-fluid bg-dark text-light border-top wow fadeIn">
+        <div class="row">
+            <div class="col-md-6 px-0">
+                <div id="map" style="width: 100%; height: 100%; min-height: 400px"></div>
+            </div>
+            <div class="col-md-6 px-5 has-height-lg middle-items">
+                <h3>FIND US</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, laboriosam doloremque odio delectus, sunt magnam laborum impedit molestiae, magni quae ipsum, ullam eos! Alias suscipit impedit et, adipisci illo quam.</p>
+                <div class="text-muted">
+                    <p><span class="ti-location-pin pr-3"></span> 12345 Fake ST NoWhere, AB Country</p>
+                    <p><span class="ti-support pr-3"></span> (123) 456-7890</p>
+                    <p><span class="ti-email pr-3"></span>info@website.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- page footer  -->
+    <div class="container-fluid bg-dark text-light has-height-md middle-items border-top text-center wow fadeIn">
+        <div class="row">
+            <div class="col-sm-4">
+                <h3>EMAIL US</h3>
+                <P class="text-muted">info@website.com</P>
+            </div>
+            <div class="col-sm-4">
+                <h3>CALL US</h3>
+                <P class="text-muted">(123) 456-7890</P>
+            </div>
+            <div class="col-sm-4">
+                <h3>FIND US</h3>
+                <P class="text-muted">12345 Fake ST NoWhere AB Country</P>
+            </div>
+        </div>
+    </div>
+    <div class="bg-dark text-light text-center border-top wow fadeIn">
+        <p class="mb-0 py-3 text-muted small">&copy; Copyright <script>document.write(new Date().getFullYear())</script> Made with <i class="ti-heart text-danger"></i> By <a href="http://devcrud.com">DevCRUD</a></p>
+    </div>
+    <!-- end of page footer -->
+
+
+
+    
+    <script src="{% static 'js/jquery-1.11.0.min.js' %}"></script>
+    <script src="{% static 'js/jquery-migrate-1.2.1.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'js/templatemo.js' %}"></script>
+    <script src="{% static 'js/custom.js' %}"></script>
+
+
+	<!-- core  -->
+    <script src="{% static 'vendors/jquery/jquery-3.4.1.js' %}"></script>
+    <script src="{% static 'vendors/bootstrap/bootstrap.bundle.js' %}"></script>
+
+    <!-- bootstrap affix -->
+    <script src="{% static 'vendors/bootstrap/bootstrap.affix.js' %}"></script>
+
+    <!-- wow.js -->
+    <script src="{% static 'vendors/wow/wow.js' %}"></script>
+    
+    <!-- google maps -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&callback=initMap"></script>
+
+    <!-- FoodHut js -->
+    <script src="{% static 'js/foodhut.js' %}"></script>
+
+</body>
+</html>
