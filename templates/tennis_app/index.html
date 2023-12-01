@@ -8,6 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Start your development with FoodHut landing page.">
     <meta name="author" content="Devcrud">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
     <title>FoodHut | Free Bootstrap 4.3.x template</title>
 
     <!-- Load fonts style after rendering the layout styles -->
@@ -48,6 +53,8 @@
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
                 <li class="nav-item">
@@ -64,23 +71,40 @@
                 </li>
             </ul>
             <a class="navbar-brand m-auto" href="#">
-                {% comment %} <img src="{% static 'img/logo.svg'%}" class="brand-img" alt=""> {% endcomment %}
                 <img src="{% static 'img/logo.png'%}" class="brand-img" alt="">
                 <span class="brand-txt">Tennis Euforia</span>
             </a>
             <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#blog">Blog<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#testmonial">Reviews</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact Us</a>
-                </li>
-                <li class="nav-item">
-                    <a href="components.html" class="btn btn-primary ml-xl-4">Components</a>
-                </li>
+                <main-header>
+                    <div class="icon-header">
+                        <svg heigth="80" width="80">
+                            <circle cx="25" cy="25" r=20 stroke="white" stroke-width="2" fill="none"></circle>
+                        </svg>
+                        <i class='bx bxl-instagram'></i>
+                    </div>
+
+                    <div class="icon-header">
+                        <svg heigth="80" width="80">
+                            <circle cx="25" cy="25" r=20 stroke="white" stroke-width="2" fill="none"></circle>
+                        </svg>
+                        <i class='bx bxl-facebook-circle'></i>
+                    </div>
+
+                    <div class="icon-header">
+                        <svg heigth="80" width="80">
+                            <circle cx="25" cy="25" r=20 stroke="white" stroke-width="2" fill="none"></circle>
+                        </svg>
+                        <i class='bx bxl-whatsapp'></i>
+                    </div>
+
+                    <div class="icon-header">
+                        <svg heigth="80" width="80">
+                            <circle cx="25" cy="25" r=20 stroke="white" stroke-width="2" fill="none"></circle>
+                        </svg>
+                        <i class='bx bxl-twitter'></i>
+                    </div>
+
+                </main-header>
             </ul>
         </div>
     </nav>
@@ -196,7 +220,7 @@
     <section class="container py-5">
         <div class="row text-center pt-3">
             <div class="col-lg-6 m-auto">
-                <h1 class="h1">Categories of The Month</h1>
+                <h1 class="h1">Categorias</h1>
                 <p>
                     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
                     deserunt mollit anim id est laborum.
@@ -207,17 +231,22 @@
             <div class="col-12 col-md-4 p-5 mt-3">
                 <a href="#"><img src="{% static 'img/hombre.jpg' %}" class="rounded-circle img-fluid border"></a>
                 <h5 class="text-center mt-3 mb-3">Hombre </h5>
-                <p class="text-center"><a class="btn btn-success">Go Shop</a></p>
             </div>
             <div class="col-12 col-md-4 p-5 mt-3">
                 <a href="#"><img src="{% static 'img/dama.jpg' %}" class="rounded-circle img-fluid border"></a>
                 <h2 class="h5 text-center mt-3 mb-3">Mujer </h2>
-                <p class="text-center"><a class="btn btn-success">Go Shop</a></p>
             </div>
             <div class="col-12 col-md-4 p-5 mt-3">
                 <a href="#"><img src="{% static 'img/alta_gama.jpg' %}" class="rounded-circle img-fluid border"></a>
+                <h2 class="h5 text-center mt-3 mb-3">Futboll</h2>
+            </div>
+            <div class="col-12 col-md-6 p-5 mt-3">
+                <a href="#"><img src="{% static 'img/alta_gama.jpg' %}" class="rounded-circle img-fluid border"></a>
                 <h2 class="h5 text-center mt-3 mb-3">Alta gama</h2>
-                <p class="text-center"><a class="btn btn-success">Go Shop</a></p>
+            </div>
+            <div class="col-12 col-md-6 p-5 mt-3">
+                <a href="#"><img src="{% static 'img/alta_gama.jpg' %}" class="rounded-circle img-fluid border"></a>
+                <h2 class="h5 text-center mt-3 mb-3">Accesorios</h2>
             </div>
         </div>
     </section>
@@ -326,14 +355,14 @@
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="col-md-6 px-5 has-height-lg middle-items">
-                <h3>FIND US</h3>
+                <h3>QUINES SOMOS</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, laboriosam doloremque odio delectus,
                     sunt magnam laborum impedit molestiae, magni quae ipsum, ullam eos! Alias suscipit impedit et,
                     adipisci illo quam.</p>
                 <div class="text-muted">
-                    <p><span class="ti-location-pin pr-3"></span> 12345 Fake ST NoWhere, AB Country</p>
-                    <p><span class="ti-support pr-3"></span> (123) 456-7890</p>
-                    <p><span class="ti-email pr-3"></span>info@website.com</p>
+                    <p><span class="ti-location-pin pr-3"></span> Cll 58 # 19-03 barrio galán Gomez, Barrancabermeja</p>
+                    <p><span class="ti-support pr-3"></span>(+57) 310 2918205</p>
+                    <p><span class="ti-email pr-3"></span> euforiajeansbca@gmail.com</p>
                 </div>
             </div>
         </div>
@@ -342,24 +371,47 @@
     <!-- page footer  -->
     <div class="container-fluid bg-dark text-light has-height-md middle-items border-top text-center wow fadeIn">
         <div class="row">
-            <div class="col-sm-4">
-                <h3>EMAIL US</h3>
-                <P class="text-muted">info@website.com</P>
-            </div>
-            <div class="col-sm-4">
-                <h3>CALL US</h3>
-                <P class="text-muted">(123) 456-7890</P>
-            </div>
-            <div class="col-sm-4">
-                <h3>FIND US</h3>
-                <P class="text-muted">12345 Fake ST NoWhere AB Country</P>
-            </div>
+
+            <main>
+                <div class="icon">
+                    <svg heigth="80" width="80">
+                        <circle cx="40" cy="40" r=35 stroke="white" stroke-width="4" fill="none"></circle>
+                    </svg>
+                    <i class='bx bxl-instagram'></i>
+                </div>
+
+                <div class="icon">
+                    <svg heigth="80" width="80">
+                        <circle cx="40" cy="40" r=35 stroke="white" stroke-width="4" fill="none"></circle>
+                    </svg>
+                    <i class='bx bxl-facebook-circle'></i>
+                </div>
+
+                <div class="icon">
+                    <svg heigth="80" width="80">
+                        <circle cx="40" cy="40" r=35 stroke="white" stroke-width="4" fill="none"></circle>
+                    </svg>
+                    <i class='bx bxl-whatsapp'></i>
+                </div>
+
+                <div class="icon">
+                    <svg heigth="80" width="80">
+                        <circle cx="40" cy="40" r=35 stroke="white" stroke-width="4" fill="none"></circle>
+                    </svg>
+                    <i class='bx bxl-twitter'></i>
+                </div>
+
+            </main>
+
+
         </div>
     </div>
     <div class="bg-dark text-light text-center border-top wow fadeIn">
         <p class="mb-0 py-3 text-muted small">&copy; Copyright
-            <script>document.write(new Date().getFullYear())</script> Made with <i class="ti-heart text-danger"></i> By
-            <a href="http://devcrud.com">DevCRUD</a>
+            <script>document.write(new Date().getFullYear())</script> Made with <i class="ti-mobile brand-txt"></i>
+            Colombia
+            <a href="https://api.whatsapp.com/send?phone=+573212777381&text=Hola, me gustaria Obtener más información">Jhon
+                Bohorquez</a>
         </p>
     </div>
     <!-- end of page footer -->
