@@ -518,11 +518,13 @@ mark,
 .img-fluid {
   max-width: 100%;
   height: auto;
+  border-radius: 5%;
+  border: 10px solid rgba(0, 0, 0, 0.174);
 }
 
 .img-thumbnail {
   padding: 0.25rem;
-  background-color: #343a40;
+  background-color: #343a4013;
   border: 1px solid #dee2e6;
   border-radius: 0.2rem;
   max-width: 100%;
@@ -12310,7 +12312,7 @@ pre {
 .header {
   height: 100vh;
   max-height: 900px;
-  background: url('{% static "img/main.jpg" %}') no-repeat center center fixed;
+  background: url('/static/img/main.jpg') no-repeat center center fixed;
   background-size: cover;
   min-height: 750px;
 }
